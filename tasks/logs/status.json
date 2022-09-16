@@ -1,0 +1,11 @@
+{
+  "log": [
+    {
+      "input": {},
+      "output": {
+        "status": "Ok"
+      }
+    }
+  ],
+  "boundaries": {}
+}
