@@ -1,5 +1,5 @@
 {
-  "name": "@marble-seeds/backend-module-template",
+  "name": "@marble-seeds/api-project-template",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/latteware/marble-backend-module-template.git"
+    "url": "git+https://github.com/latteware/marble-api-project-template.git"
   },
   "author": "Siedrix",
   "license": "MIT",
@@ -26,8 +26,8 @@
   ],
   "dependencies": {
     "@marble-seeds/api": "^0.2.1",
-    "@marble-seeds/record-tape": "^0.1.1",
-    "@marble-seeds/task": "^0.9.5",
+    "@marble-seeds/record-tape": "^0.2.1",
+    "@marble-seeds/task": "^0.10.0",
     "app-module-path": "^2.2.0",
     "dotenv": "^16.0.2",
     "es6-requireindex": "^0.3.10",

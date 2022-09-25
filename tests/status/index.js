@@ -1,12 +1,16 @@
-// const Task = require('@marble-seeds/task')
+const path = require('path')
 const RecordTape = require('@marble-seeds/record-tape')
 
-const task = require('tasks/status')
+// Status task test
+const statusTask = require('tasks/status')
+const statusLogPath = path.resolve(__dirname, '../../tasks/logs/status')
 
-const tape = task.getTape()
-tape.loadSync()
-tape.setMode('replay')
+const statusTape = new RecordTape({
+  path: statusLogPath
+})
+statusTape.loadSync()
 
-RecordTape.testTape('Status', tape, async (argv) => {
-  return await task.run(argv)
+statusTape.replay({
+  name: 'Status task',
+  task: statusTask
 })
